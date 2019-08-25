@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  white-space: nowrap; /* make sure that wour diplay inline does not generate a white space */
 }
 
 body {
