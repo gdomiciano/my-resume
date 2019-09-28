@@ -9,20 +9,125 @@
   <title>Geisy's Resume</title>
 </head>
 <body>
-  <aside class="sidebar">sidebar</aside>
-  <div class="wrapper">
+  <aside class="sidebar">
+    <img class="picture" src="https://media.licdn.com/dms/image/C4E03AQH7U_BL5gyFEQ/profile-displayphoto-shrink_200_200/0?e=1574899200&v=beta&t=xW80fD8Dx5RlXuD_qrDOH3Dkw5lnyhIpDN6a-qsW_iQ" alt="Geisy Domiciano's Picture. Black women with dark afro hair with a Slightly Smiling Face in a green background">
+    <div class="contact-info">
+      <a href="mailto:geisydomiciano@gmail.com">geisydomiciano@gmail.com</a>
+      <a href="tel:+_46702352613">+46 070 235 26 13</a>
+      <address class="location">New York</address>
+      <a href="http://linkedin.com/geisydomiciano/en" target="_blank" rel="noopener noreferrer">linkedin.com/geisydomiciano</a>
+      <p class="skype">geisy1998</p>
+    </div>
+    <div class="skills">
+      <h3 class="header-3">skills</h3>
+      <mark class="skill">HTML5</mark>
+      <mark class="skill">CSS3</mark>
+      <mark class="skill">Javascript</mark>
+      <mark class="skill">Vue.js</mark>
+      <mark class="skill">Nuxt.js</mark>
+      <mark class="skill">Testing</mark>
+      <mark class="skill">SSR</mark>
+      <mark class="skill">PWA</mark>
+    </div>
+    <div class="languages">
+      <h3 class="header-3">languages</h3>
+      <div class="language-level">
+        <strong class="bold">Portuguese</strong>
+        <span class="level active">elementaty</span>
+        <span class="level active">technical</span>
+        <span class="level active">intermediate</span>
+        <span class="level active">advanced</span>
+        <span class="level active">Native</span>
+      </div>
+      <div class="language-level">
+        <strong class="bold">English</strong>
+        <span class="level active">elementaty</span>
+        <span class="level active">technical</span>
+        <span class="level active">intermediate</span>
+        <span class="level active">advanced</span>
+        <span class="level">Native</span>
+      </div>
+      <div class="language-level">
+        <strong class="bold">Swedish</strong>
+        <span class="level active">elementaty</span>
+        <span class="level">technical</span>
+        <span class="level">intermediate</span>
+        <span class="level">advanced</span>
+        <span class="level">Native</span>
+      </div>
+    </aside>
     <header class="header">
       <h1 class="name">Geisy Domiciano</h1>
-      <strong class="position"><u>Front End</u> Developer</strong>
-      <p class="summary">nv;dsbv;ijbdsaivjbsaidbvsdifbvsjdBVIDFJSBVKJSDBVJSDBVKJPSDFBVJPSA DBVIJAHBSVKPHBASVBAISJDBVPASDBVSDALKJVBSPDAIBVSAIJBVPAIS FBVIPASBUbuiofbasibvspidvbwjpbsdivbsidbvsdkjvbisdjvbsdjv ibisdubvipsdbvispdubvsidjhbvdsiuvbsdipvbsd
+      <strong class="bold position"><u>Front End</u> Developer</strong>
+      <p class="summary">
+        I have been working as a Front end developer since 2011, with experience that goes from institutional websites to PWA (Progressive Web App) development.
+        <br>
+        From my latest's experiences I have become fluent in Vue.js and Nuxt.js frameworks, I am also familiar with tests (mostly end to end and integration), CI/CD and Agile methodologies.
+        <br>
+        I am currently the Vue vixens chapter leader in Sweden and have been given some talks, workshops and web development courses for women around Stockholm and some other countries in order to increase diversity in tech.
+        <br>
+        I have a degree in Internet Systems and an MBA in Mobile Application Development.
       </p>
     </header>
     <main class="main">
-      <article><h2>work experience</h2></article>
-      <article><h2>organizations</h2></article>
-      <article><h2>Education</h2></article>
-      <article><h2>Honours and awards</h2></article>
+      <article class="experiences">
+        <h2 class="header-2">work experience</h2>
+        <div class="experience">
+          <strong class="bold position-name">Front end developer</strong>
+          <a href="https://danielwellington.com" class="company-name">Daniel Wellington AB</a>
+          <div class="period-location">
+            <time class="period">06/2018 - present</time>
+            <address class="location">Stockholm, Sweden</address>
+          </div>
+          <ul class="activities" type="square">
+            <li class="activity">Responsible for code architecture and code refactor as well as best practices for a component based application </li>
+            <li class="activity">Strong collaboration with UX department for the UI Kit development </li>
+            <li class="activity">Developed a testing POC with cypress in order to replace Selenium for the team and company</li>
+          </ul>
+        </div>
+        <div class="experience">
+          <strong class="bold position-name">FullStack software engineer</strong>
+          <a href="https://kognity.com" class="company-name">Kognity</a>
+          <div class="period-location">
+            <time class="period">01/2018 - 06/2018</time>
+            <address class="location">Stockholm, Sweden</address>
+          </div>
+          <ul class="activities">
+            <li class="activity">Maintenance of the platform front end in AngularJS(1.6) and Django templates.</li>
+            <li class="activity">Maintenance and development of APIs based on Django Rest Framework.</li>
+            <li class="activity">
+                Small improvements on time of tests on CI.
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="organizations">
+        <h2 class="header-2">organizations</h2>
+        <p class="organization">Vue Vixens Sweden (<time>2018 - Present</time>)</p>
+        <p class="organization">DW LIT (<time>2019 - Present</time>)</p>
+      </article>
+      <article class="education">
+        <h2 class="header-2">Education</h2>
+        <div class="degree">
+          <strong class="bold course-title">MBA in Mobile Development, Games and IoT</strong>
+          <p class="school-name">FIAP</p>
+          <time class="course-duration">08/2015 - 08/2016</time>
+        </div>
+        <div class="degree">
+          <strong class="bold course-title">Internet Systems</strong>
+          <p class="school-name">IBTA - Instituto brasileiro de Tecnologia Avançada</p>
+          <time class="course-duration">01/2011 - 06/2013</time>
+        </div>
+        <div class="degree">
+          <strong class="bold course-title">Computer Networks</strong>
+          <p class="school-name">SENAI - Suiço Brasileiro</p>
+          <time class="course-duration">01/2009 - 12/2010</time>
+        </div>
+      </article>
+      <article class="honours-awards">
+        <h2 class="header-2">Honours and awards</h2>
+
+      </article>
     </main>
-  </div>
-</body>
-</html>
+  </body>
+  </html>

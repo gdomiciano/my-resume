@@ -7,27 +7,140 @@
 }
 
 body {
-  width: 1000px;
+  min-width: 600px;
+  max-width: 1000px;
   margin: 0px auto; /* centralizes the element horizontally*/
+  display: grid;
+  grid-template-areas:
+  'sidebar header'
+  'sidebar main';
+  grid-template-columns: 200px minmax(400, 800);
+  grid-gap: 30px;
+  padding: 30px;
+  color: #333;
+}
+a, a:active, a:visited {
+  color: #333;
+}
+
+/* commom style */
+.sidebar,
+.main {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.header-2,
+.header-3,
+.bold,
+.period-location,
+a:hover, a:focus {
+  color: plum;
+}
+
+.header-2,
+.header-3 {
+  font-size: 20px;
+  border-bottom: 2px solid plum;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+.bold {
+  font-size: 18px;
+  display: block;
+}
+
+.header,
+.skill {
+  background-color: plum;
+  color: white;
 }
 
 .sidebar {
-  float: left;
+  grid-area: sidebar;
   width: 200px;
 }
 
-.wrapper {
+.picture {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.contact-info,
+.skills,
+.languages {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-rows: auto
+}
+
+.skill {
+  width: fit-content;
+  padding: 0 4px;
+  line-height: 20px;
+  border-radius: 3px;
+}
+
+.level {
   display: inline-block;
-  width: 800px;
+  text-indent: -999px;
+  width: 25px;
+  height: 25px;
+  border: 2px #666 solid;
+  border-radius: 50%;
+}
+
+.level.active {
+  background-color: #666;
+  border: 2px #666 double;
 }
 
 .header {
-  background-color: aquamarine;
+  grid-area: header;
   padding: 20px;
-  color: white;
 }
-.name {}
-.position {}
-.summary {}
 
-.main {}
+.wrapper {
+  grid-area: main;
+}
+
+.header-2 {
+  text-indent: 15px;
+}
+
+.experience,
+.organizations,
+.education,
+.honours-awards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  padding: 10px 0;
+}
+
+.company-name{
+  font-weight: 600;
+}
+
+.period-location {
+  display: grid;
+  grid-template-areas: 'time . location';
+  grid-template-columns: auto 1fr auto;
+}
+
+.period-location .period {
+  grid-area: time;
+}
+
+.period-location .location {
+  grid-area: location;
+}
+
+.activities {
+  padding-left: 20px;
+}
+.activity {
+  list-style-position: inside;
+}
